@@ -1,7 +1,3 @@
-export const metadata = {
-  title: "Car-Zone/Contact"
-}
-
 import React from 'react'
 import ContactUs from '../Components/contact';
 import Navbar from '../Components/navbar';
