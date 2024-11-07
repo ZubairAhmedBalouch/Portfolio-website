@@ -31,7 +31,7 @@ const Hero = () => {
 
           <div className="object-cover flex items-center justify-center mt-20 sm:mt-24 md:mt-32 lg:mt-40 xl:mt-48">
             <Image
-              className="w-full sm:w-4/5 md:w-3/4 lg:w-2/3 xl:w-3/4 2xl:w-2/3 h-auto transform transition-all duration-500 ease-in-out hover:scale-140 hover:rotate-2 hover:shadow-2xl  opacity-90 hover:opacity-100"
+              className="w-full sm:w-4/5 md:w-3/4 lg:w-2/3 xl:w-3/4 2xl:w-2/3 h-auto transform transition-all duration-500 ease-in-out hover:scale-150 hover:rotate-2 hover:shadow-2xl  opacity-90 hover:opacity-100"
               src={pic}
               alt="Catalogue"
               height={800}
