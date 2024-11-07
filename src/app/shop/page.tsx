@@ -1,3 +1,7 @@
+export const metadata = {
+  title: "Car-Zone/Shop"
+}
+
 import React from 'react'
 import Cards from '../Components/carcards';
 import Navbar from '../Components/navbar'

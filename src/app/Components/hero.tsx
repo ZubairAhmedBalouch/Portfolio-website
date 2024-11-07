@@ -31,7 +31,7 @@ const Hero = () => {
 
           <div className="object-cover flex items-center justify-center mt-20 sm:mt-24 md:mt-32 lg:mt-40 xl:mt-48">
             <Image
-              className="w-full sm:w-4/5 md:w-3/4 lg:w-2/3 xl:w-3/4 2xl:w-2/3 h-auto transform transition-all duration-500 ease-in-out hover:scale-150 hover:rotate-2 hover:shadow-2xl  opacity-90 hover:opacity-100"
+              className="w-full sm:w-4/5 md:w-3/4 lg:w-2/3 xl:w-3/4 2xl:w-2/3 h-auto transform transition-all duration-500 ease-in-out hover:scale-140 hover:rotate-2 hover:shadow-2xl  opacity-90 hover:opacity-100"
               src={pic}
               alt="Catalogue"
               height={800}
@@ -124,9 +124,9 @@ const Hero = () => {
             See what our satisfied customers have to say about their car buying
             experience.
           </p>
-          <div className="flex justify-center space-x-8 overflow-x-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-center">
             {/* Testimonial 1 */}
-            <div className="bg-gray-600 p-6 rounded-lg shadow-xl w-80 transform transition-all hover:scale-105 hover:shadow-2xl">
+            <div className="bg-gray-600 p-6 rounded-lg shadow-xl transform transition-all hover:scale-105 hover:shadow-2xl">
               <p className="text-lg italic text-gray-300 mb-4">
                 ~ The experience was seamless. I got the car I wanted at an
                 amazing price!
@@ -135,16 +135,16 @@ const Hero = () => {
               <p className="text-gray-500">Verified Buyer</p>
             </div>
             {/* Testimonial 2 */}
-            <div className="bg-gray-600 p-6 rounded-lg shadow-xl w-80 transform transition-all hover:scale-105 hover:shadow-2xl">
+            <div className="bg-gray-600 p-6 rounded-lg shadow-xl transform transition-all hover:scale-105 hover:shadow-2xl">
               <p className="text-lg italic text-gray-300 mb-4">
-                ~ Excellent customer service. They helped me find the perfect car
-                for my family.
+                ~ Excellent customer service. They helped me find the perfect
+                car for my family.
               </p>
               <h3 className="font-semibold text-xl text-white">Jane Smith</h3>
               <p className="text-gray-500">Verified Buyer</p>
             </div>
             {/* Testimonial 3 */}
-            <div className="bg-gray-600 p-6 rounded-lg shadow-xl w-80 transform transition-all hover:scale-105 hover:shadow-2xl">
+            <div className="bg-gray-600 p-6 rounded-lg shadow-xl transform transition-all hover:scale-105 hover:shadow-2xl">
               <p className="text-lg italic text-gray-300 mb-4">
                 ~ The entire team was amazing and made the car buying process so
                 easy!
@@ -153,10 +153,10 @@ const Hero = () => {
               <p className="text-gray-500">Verified Buyer</p>
             </div>
             {/* Testimonial 4 */}
-            <div className="bg-gray-600 p-6 rounded-lg shadow-xl w-80 transform transition-all hover:scale-105 hover:shadow-2xl">
+            <div className="bg-gray-600 p-6 rounded-lg shadow-xl transform transition-all hover:scale-105 hover:shadow-2xl">
               <p className="text-lg italic text-gray-300 mb-4">
-                ~ I love my new car! The process was simple, and the staff was so
-                friendly.
+                ~ I love my new car! The process was simple, and the staff was
+                so friendly.
               </p>
               <h3 className="font-semibold text-xl text-white">
                 Sarah Johnson
@@ -165,16 +165,18 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        {/* Footer Section */}
-        <footer className="bg-black mt-10 text-white py-6">
-          <div className="container mx-auto text-center">
-            <p className="text-sm">
-              &copy; {new Date().getFullYear()} Copyright - 2024, CAR-ZONE, All Rights Reserved | Developed
-              by <span className="font-semibold">Zubair Ahmed Baloch</span>
-            </p>
-          </div>
-        </footer>
       </section>
+
+      {/* Footer Section */}
+      <footer className="bg-black mt-0 text-white py-6">
+        <div className="container mx-auto text-center">
+          <p className="text-sm">
+            &copy; {new Date().getFullYear()} Copyright, CAR-ZONE, All
+            Rights Reserved | Developed by{" "}
+            <span className="font-semibold">Zubair Ahmed Baloch</span>
+          </p>
+        </div>
+      </footer>
     </header>
   );
 };

@@ -1,4 +1,6 @@
-
+export const metadata = {
+  title: "Car-Zone/Home"
+}
 
 import Header from "./Components/navbar";
 import Hero from "./Components/hero";

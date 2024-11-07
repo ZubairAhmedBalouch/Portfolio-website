@@ -1,3 +1,7 @@
+export const metadata = {
+  title: "Car-Zone/About"
+}
+
 import React from 'react'
 // import about from "../Components/about"
 import AboutUs from '../Components/about'

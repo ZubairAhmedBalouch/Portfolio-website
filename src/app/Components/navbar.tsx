@@ -55,9 +55,9 @@ const Navbar: React.FC = () => {
                             <Link className="my-2 px-3  py-2 text-xl text-gray-100 transition-colors duration-300 transform dark:text-gray-200   tracking-wider rounded-lg hover:bg-red-500 md:mx-4 md:my-0" href="/about">About</Link>
                         </div>
                         </div>
-                        <Link className='px-1 py-1 text-white text-xl tracking-wider  transition-colors  rounded-lg  hover:bg-blue-600' href="/login">Login</Link>
-                        <span className='text-white m-1 text-[26px]'>/</span>
-                        <button className='px-1 py-1 text-white text-xl tracking-wider  transition-colors  rounded-lg  hover:bg-blue-600'>SignUp</button>
+                        <Link className='px-2 py-3 ml-2 text-white text-xl tracking-wider  transition-colors  rounded-lg  hover:bg-blue-600' href="/login">Login</Link>
+                        <span className='text-white text-[26px]'>/</span>
+                        <button className='px-2 py-3 text-white text-xl tracking-wider  transition-colors  rounded-lg  hover:bg-blue-600'>SignUp</button>
 
                         {/* <div className="flex justify-center md:block">
                             <a className="relative text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-300" href="#">

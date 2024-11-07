@@ -74,7 +74,7 @@ const Cards = () => {
   return (
     <>
     {/* <SmoothAnimatedSection> */}
-      <h1 className="text-4xl md:text-[56px] font-extrabold font-serif text-center text-yellow-500 bg-gradient-to-r from-indigo-500 via-blue-600 to-indigo-600 p-6 md:p-8 shadow-xl shadow-blue-500/50 rounded-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-yellow-400">
+      <h1 className="text-4xl sm:text-[40px] md:text-[56px] font-extrabold font-serif text-center text-yellow-500 bg-gradient-to-r from-indigo-500 via-blue-600 to-indigo-600 p-6 md:p-8 shadow-xl shadow-blue-500/50 rounded-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-yellow-400">
         Featured Cars
       </h1>
 

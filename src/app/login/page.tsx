@@ -1,3 +1,7 @@
+export const metadata = {
+  title: "Car-Zone/login"
+}
+
 import React from 'react';
 import LoginPage from '../Components/login';
 import Navbar from '../Components/navbar';
