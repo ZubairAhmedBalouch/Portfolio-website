@@ -1,15 +1,13 @@
-
 import React from 'react'
-// import about from "../Components/about"
-import AboutUs from "../Components/about";
+import Skills from '../Components/skills';
 import Navbar from '../Components/navbar';
-import Footer from '../Components/footer';
+import Footer from '../Components/footer'
 
 const page = () => {
   return (
     <div>
         <Navbar />
-        <AboutUs/>
+        <Skills />
         <Footer />
       
     </div>

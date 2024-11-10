@@ -2,20 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* Optional: Custom dark mode styles */
+@layer base {
+  body {
+    @apply bg-white text-black; /* Default light mode styles */
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  .dark body {
+    @apply bg-black text-white; /* Dark mode styles */
+  }
+
+  /* Example: Navbar styles */
+  .dark .bg-blue-700 {
+    @apply bg-blue-900;
   }
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-} */

@@ -1,93 +1,217 @@
 "use client";
+import profilePic from "../../../public/my-pic2.png"; // Profile image path
 import Image from "next/image";
-import teamImage from "../../../public/team.jpg"; 
-// import SmoothAnimatedSection from './animation';
 
-
-const AboutUs = () => {
+const about = () => {
   return (
-    <section id="about" className="about-us bg-gradient-to-r from-gray-800 via-gray-600 to-gray-900 text-white py-12">
-    {/* <SmoothAnimatedSection> */}
-    <div className="container mx-auto px-1">
-        {/* Section Heading */}
-        <h2 className="text-center text-2xl sm:text-3xl md:text-5xl font-extrabold font-serif text-transparent bg-gradient-to-r from-blue-600 via-blue-500 to-indigo-500 bg-clip-text mb-8 p-4 sm:p-6 md:p-8 lg:p-10 border-4 border-transparent rounded-lg shadow-xl shadow-blue-500/50 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-400">
-          About Us - Car Zone
-        </h2>
+    <section className="bg-gray-900 text-white py-20">
+      <div className="container mx-auto px-6 md:px-16">
+        {/* Header */}
+        <div className="flex items-center justify-center md:justify-start mb-12">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-center md:text-left text-white tracking-tight leading-tight">
+            About Me
+          </h1>
+        </div>
 
-        {/* About Us Content */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-[50px]">
-          {/* Left Side - Text and Info */}
-          <div className="text-gray-100 md:text-left max-w-xl mx-auto md:mx-0 ">
-            <p className="text-xl mb-4 text-justify">
-              Welcome to Car Zone, where we provide top-notch automobiles to
-              match every need. Whether you are looking for the latest models,
-              luxury cars, or reliable used vehicles, we have got you covered. Our
-              commitment to quality, customer satisfaction, and affordability is
-              what drives us forward.
-            </p>
-            <p className="text-xl mb-4 text-justify">
-              We take pride in offering a wide range of vehicles to our customers
-              and ensuring that you have the best possible car-buying experience.
-              Our team is dedicated to helping you find your dream car.
-            </p>
-            <button className="mt-6 px-8 py-3 bg-blue-600 text-white font-semibold rounded-md shadow-lg hover:bg-blue-700 transition-colors duration-300">
-              Learn More
-            </button>
+        {/* Main content */}
+        <div className="flex flex-col md:flex-row gap-12">
+          {/* Profile Image */}
+          <div className="flex justify-center md:w-1/3 relative">
+            <Image
+              className="border-4 border-blue-500 shadow-xl hover:scale-105 transition-all duration-300 ease-in-out rounded-md" // Changed to box shape
+              src={profilePic}
+              alt="Profile Picture"
+              height={400} // Adjusted height
+              width={400} // Adjusted width
+              quality={100} // Higher quality for better visuals
+            />
+            {/* Image overlay (optional effect) */}
+            <div className="absolute inset-0 rounded-md bg-black opacity-30"></div>{" "}
+            {/* Adjusted for box shape */}
           </div>
 
-          {/* Right Side-Image */}
-          <div className="w-full md:w-1/2 relative">
-            <Image
-              src={teamImage} 
-              alt="Our Team"
-              layout="responsive"
-              className="rounded-lg shadow-xl"
-            />
+          {/* Information */}
+          <div className="md:w-2/3 space-y-6 text-lg leading-relaxed text-gray-300">
+            <p className="text-xl">
+              Hello! I am{" "}
+              <span className="font-semibold text-blue-400">Zubair Ahmed Baloch</span>, a
+              passionate{" "}
+              <span className="font-semibold text-blue-400">
+                Cloud Applied Generative AI Engineer
+              </span>{" "}
+              and Full Stack Developer specializing in{" "}
+              <span className="font-semibold text-blue-400">Web 3.0</span>,{" "}
+              <span className="font-semibold text-blue-400">AI</span>, and the{" "}
+              <span className="font-semibold text-blue-400">Metaverse</span>.
+              Currently, I am enhancing my expertise through a specialized course
+              at the{" "}
+              <span className="font-semibold text-blue-400">
+                Governor House Karachi
+              </span>
+              , focusing on cutting-edge technologies that are shaping the
+              future of digital experiences.
+            </p>
+
+            <p>
+              I hold a{" "}
+              <span className="font-semibold text-blue-400">
+                Bachelors degree in Electronics Engineering Technology
+              </span>{" "}
+              from{" "}
+              <span className="font-semibold text-blue-400">
+                The Benazir Bhutto Shaheed University of Technology
+              </span>{" "}
+              with a{" "}
+              <span className="font-semibold text-blue-400">3.7 C.G.P.A</span>.
+              My academic focus spanned fields such as{" "}
+              <span className="font-semibold text-blue-400">AI</span>,{" "}
+              <span className="font-semibold text-blue-400">
+                Industrial Automation
+              </span>
+              , <span className="font-semibold text-blue-400">Robotics</span>,{" "}
+              <span className="font-semibold text-blue-400">IoT</span>, and{" "}
+              <span className="font-semibold text-blue-400">
+                Control Engineering
+              </span>
+              . One of my key projects involved designing a{" "}
+              <span className="font-semibold text-blue-400">
+                wireless-controlled movable robot
+              </span>{" "}
+              equipped with real-time camera surveillance, intended for COVID-19
+              precautions.
+            </p>
+
+            <p>
+              In addition to my engineering expertise, I specialize in{" "}
+              <span className="font-semibold text-blue-400">
+                Front-End Development
+              </span>
+              , particularly with{" "}
+              <span className="font-semibold text-blue-400">React.js</span> and{" "}
+              <span className="font-semibold text-blue-400">Next.js</span>, as
+              well as{" "}
+              <span className="font-semibold text-blue-400">
+                API Design, Development, and Deployment
+              </span>{" "}
+              using <span className="font-semibold text-blue-400">FastAPI</span>
+              , <span className="font-semibold text-blue-400">Containers</span>,{" "}
+              <span className="font-semibold text-blue-400">OpenAPI</span>, and
+              building{" "}
+              <span className="font-semibold text-blue-400">
+                Custom GPT models
+              </span>
+              .
+            </p>
+
+            <p>
+              I have gained hands-on experience in various roles, including as a{" "}
+              <span className="font-semibold text-blue-400">Data Officer</span>{" "}
+              with <span className="font-semibold text-blue-400">UNICEF</span>{" "}
+              and{" "}
+              <span className="font-semibold text-blue-400">
+                Indus Hospital & Health Network
+              </span>{" "}
+              during the{" "}
+              <span className="font-semibold text-blue-400">
+                Flood Emergency Response Project
+              </span>{" "}
+              in Sindh. I also worked as a{" "}
+              <span className="font-semibold text-blue-400">
+                Telco/Trainee Engineer
+              </span>{" "}
+              at <span className="font-semibold text-blue-400">HSS/Huawei</span>{" "}
+              in Karachi, and as a{" "}
+              <span className="font-semibold text-blue-400">
+                Computer Operator/Instructor
+              </span>{" "}
+              at{" "}
+              <span className="font-semibold text-blue-400">
+                Sindh Academy of Computer Science and Information Technology
+              </span>
+              .
+            </p>
+
+            <p>
+              I am excited about the future of technology and its potential to
+              drive innovation. If you are interested in collaborating or
+              discussing potential projects, feel free to reach out!
+            </p>
           </div>
         </div>
 
-        {/* Our Values Section */}
-        <div className="mt-16 text-center">
-          <h3 className="text-2xl md:text-3xl font-bold mb-6 underline text-gray-100">
-            Our Values
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-            {/* Value Cards */}
-            <div className="value-card bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transform transition-all duration-300">
-              <h4 className="text-xl font-semibold text-blue-600 mb-4">
-                Customer Satisfaction
-              </h4>
-              <p>
-                We prioritize your satisfaction above everything else, ensuring
-                that you have the best experience buying or renting a car.
-              </p>
-            </div>
+        <div className="mt-16 space-y-12">
+          {/* Education Section */}
+          <div className="bg-gradient-to-r from-blue-500 to-teal-500 p-8 rounded-lg shadow-lg">
+            <h2 className="text-4xl font-bold text-white text-center mb-6">
+              Education
+            </h2>
+            <ul className="space-y-4 text-lg text-gray-200">
+              <li className="flex items-center gap-3 border-b-2 border-gray-300 pb-4">
+                <span className="font-semibold text-blue-200">
+                  Certified Cloud Applied Generative AI Engineer
+                </span>
+                <span className="text-gray-300">
+                  | Governor Sindh (Feb 2024 - Present)
+                </span>
+              </li>
+              <li className="flex items-center gap-3 border-b-2 border-gray-300 pb-4">
+                <span className="font-semibold text-blue-200">
+                  Bachelorss in Electronics Engineering Technology
+                </span>
+                <span className="text-gray-300">
+                  | The Benazir Bhutto Shaheed University of Technology (2018 -
+                  2022)
+                </span>
+              </li>
+              <li className="flex items-center gap-3 border-b-2 border-gray-300 pb-4">
+                <span className="font-semibold text-blue-200">
+                  Diploma in Information Technology
+                </span>
+                <span className="text-gray-300">
+                  | Sindh Board of Technical Education (2016 - 2017)
+                </span>
+              </li>
+            </ul>
+          </div>
 
-            <div className="value-card bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transform transition-all duration-300">
-              <h4 className="text-xl font-semibold text-blue-600 mb-4">
-                Quality Assurance
-              </h4>
-              <p>
-                Our cars undergo strict quality checks to ensure they meet the
-                highest standards before they reach you.
-              </p>
-            </div>
-
-            <div className="value-card bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transform transition-all duration-300">
-              <h4 className="text-xl font-semibold text-blue-600 mb-4">
-                Trust and Integrity
-              </h4>
-              <p>
-                We believe in transparency and honesty, and we strive to build
-                trust with every customer.
-              </p>
-            </div>
+          {/* Work Experience Section */}
+          <div className="bg-gradient-to-r from-teal-500 to-indigo-500 p-8 rounded-lg shadow-lg mt-12">
+            <h2 className="text-4xl font-bold text-white text-center mb-6">
+              Work Experience
+            </h2>
+            <ul className="space-y-4 text-lg text-gray-200">
+              <li className="flex items-center gap-3 border-b-2 border-gray-300 pb-4">
+                <span className="font-semibold text-blue-200">
+                  Data Officer
+                </span>
+                <span className="text-gray-300">
+                  | UNICEF / Indus Hospital & Health Network (Feb 2023 - Feb
+                  2024)
+                </span>
+              </li>
+              <li className="flex items-center gap-3 border-b-2 border-gray-300 pb-4">
+                <span className="font-semibold text-blue-200">
+                  Telco/Trainee Engineer
+                </span>
+                <span className="text-gray-300">
+                  | HSS/Huawei Company (Jan 2022 - Aug 2022)
+                </span>
+              </li>
+              <li className="flex items-center gap-3 border-b-2 border-gray-300 pb-4">
+                <span className="font-semibold text-blue-200">
+                  Computer Operator/Instructor
+                </span>
+                <span className="text-gray-300">
+                  | Sindh Academy of Computer Science & Information Technology
+                  (Aug 2017 - Oct 2020)
+                </span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-      {/* </SmoothAnimatedSection> */}
     </section>
   );
 };
 
-export default AboutUs;
+export default about;
